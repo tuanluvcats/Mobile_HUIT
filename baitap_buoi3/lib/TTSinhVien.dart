@@ -21,14 +21,15 @@ class TTSinhVien extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 80,
-                backgroundImage: NetworkImage('https://i.pravatar.cc/300'),
+                // Thay đổi từ NetworkImage sang AssetImage để lấy ảnh từ thư mục
+                backgroundImage: AssetImage('Images/Avatar.jpg'),
               ),
               const SizedBox(height: 20),
 
-              buildInfoRow("Họ và tên:", "Nguyễn Văn A", isName: true),
-              buildInfoRow("MSSV:", "2001221234"),
-              buildInfoRow("Lớp:", "13DHTH02"),
-              buildInfoRow("Khóa:", "13 Đại học"),
+              buildInfoRow("Họ và tên:", "Phạm Anh Tuấn", isName: true),
+              buildInfoRow("MSSV:", "2001230855"),
+              buildInfoRow("Lớp:", "14DHTH11"),
+              buildInfoRow("Khóa:", "14"),
               buildInfoRow("Ngành:", "Công nghệ thông tin"),
               buildInfoRow(
                 "Trường:",

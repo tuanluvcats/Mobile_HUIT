@@ -9,13 +9,19 @@ class LayoutMoMo extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.pink,
+        leading: IconButton(
+          icon: const Icon(Icons.home, color: Colors.black),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         title: const Text("MoMo", style: TextStyle(color: Colors.white)),
       ),
       body: ListView(
         children: <Widget>[
           Container(height: 15),
           GridView.count(
-            shrinkWrap: true, // Chỉ chiếm không gian cần thiết
+            shrinkWrap: true,
             physics:
                 const NeverScrollableScrollPhysics(), // Tắt cuộn của Grid, nhường cho ListView
             crossAxisCount: 4,

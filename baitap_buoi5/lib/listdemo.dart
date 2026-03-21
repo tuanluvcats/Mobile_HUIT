@@ -10,7 +10,9 @@ class Listdemo extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 239, 168, 4),
         leading: IconButton(
           icon: const Icon(Icons.home, color: Colors.black),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         title: const Text(
           "ListView Demo",

@@ -23,7 +23,7 @@ class LayoutMoMo extends StatelessWidget {
           GridView.count(
             shrinkWrap: true,
             physics:
-                const NeverScrollableScrollPhysics(), // Tắt cuộn của Grid, nhường cho ListView
+                const NeverScrollableScrollPhysics(),
             crossAxisCount: 4,
             children: <Widget>[
               _buildGridItem(Icons.payment, Colors.pink, 'Chuyển tiền'),

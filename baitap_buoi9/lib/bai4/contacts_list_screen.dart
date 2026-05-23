@@ -110,7 +110,7 @@ class _ContactsListScreenState extends State<ContactsListScreen> {
                 ? const Center(child: Text('Khong co danh ba nao.'))
                 : ListView.separated(
                     itemCount: _contacts.length,
-                    separatorBuilder: (_, __) => const Divider(height: 1),
+                    separatorBuilder: (_, _) => const Divider(height: 1),
                     itemBuilder: (context, index) {
                       final contact = _contacts[index];
                       return ListTile(
